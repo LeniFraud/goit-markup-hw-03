@@ -30,6 +30,12 @@ p {
   margin: 0;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -37,10 +43,8 @@ p {
   margin: 0 auto;
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.flex {
+  display: flex;
 }
 
 /* Головна сторінка */
@@ -52,7 +56,6 @@ p {
 }
 
 .menu {
-  display: flex;
   align-items: center;
 }
 
@@ -71,11 +74,6 @@ p {
 
 .nav {
   margin-left: 93px;
-}
-
-.nav-list,
-.contact-list {
-  display: flex;
 }
 
 .contact-list {
@@ -169,10 +167,6 @@ p {
   text-align: center;
 }
 
-.features-list {
-  display: flex;
-}
-
 .features-item {
   min-width: 270px;
 }
@@ -200,10 +194,6 @@ p {
   padding-top: 0;
 }
 
-.work-list {
-  display: flex;
-}
-
 .work-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -216,10 +206,6 @@ p {
 
 .team {
   background-color: var(--bg-light-color);
-}
-
-.team-list {
-  display: flex;
 }
 
 .team-item {
@@ -300,7 +286,6 @@ p {
 /* Кнопки */
 
 .filter-list {
-  display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -334,7 +319,6 @@ p {
 /* Перелік проєктів */
 
 .portfolio-list {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -369,6 +353,7 @@ p {
 .portfolio-item-desc {
   padding: 20px 24px;
   border: 1px solid var(--item-border-color);
+  border-top: none;
 }
 
 .portfolio-item-title {
